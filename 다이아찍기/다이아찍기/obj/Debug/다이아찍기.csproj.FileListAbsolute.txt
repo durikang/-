@@ -1,0 +1,7 @@
+C:\Users\kooda\OneDrive\바탕 화면\Csharp Study\다이아찍기\다이아찍기\bin\Debug\다이아찍기.exe.config
+C:\Users\kooda\OneDrive\바탕 화면\Csharp Study\다이아찍기\다이아찍기\bin\Debug\다이아찍기.exe
+C:\Users\kooda\OneDrive\바탕 화면\Csharp Study\다이아찍기\다이아찍기\bin\Debug\다이아찍기.pdb
+C:\Users\kooda\OneDrive\바탕 화면\Csharp Study\다이아찍기\다이아찍기\obj\Debug\다이아찍기.csprojAssemblyReference.cache
+C:\Users\kooda\OneDrive\바탕 화면\Csharp Study\다이아찍기\다이아찍기\obj\Debug\다이아찍기.csproj.CoreCompileInputs.cache
+C:\Users\kooda\OneDrive\바탕 화면\Csharp Study\다이아찍기\다이아찍기\obj\Debug\다이아찍기.exe
+C:\Users\kooda\OneDrive\바탕 화면\Csharp Study\다이아찍기\다이아찍기\obj\Debug\다이아찍기.pdb
