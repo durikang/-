@@ -1,50 +1,39 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections;
-namespace ConsoleApp6
+
+namespace ConsoleApp8
 {
     class Program
     {
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            ArrayList arrayList = new ArrayList();
-
-            bool IsPirme=false;
-
-            arrayList.Add(2);
-            arrayList.Add(3);
-            arrayList.Add(5);
-
-            for(int i = 2; i <= 100; i++)
+            bool []isPrime = new bool[n+1];
+            if (n >= 2)
             {
-                if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0)
+                for (int i = 2; i <=n; i++)
                 {
-                    arrayList.Add(i);
+                    if (isPrime[i] == false)
+                    {
+                        for(int j = i * 2; j <= n; j += i)
+                        {
+                            isPrime[j] = true;
+                        }
+                    }
                 }
+                
+                if (!isPrime[n])
+                    Console.WriteLine($"{n}은 소수입니다.");
+                else
+                    Console.WriteLine($"{n}은 소수가 아닙니다.");
 
-            }
-
-            for(int i = 0; i < arrayList.Count; i++)
-            {
-                if (arrayList[i].Equals(n))
-                {
-                    IsPirme = true;
-                    break;
-                }
-
-            }
-
-            if (IsPirme)
-            {
-                Console.WriteLine(IsPirme);
             }
             else
             {
-                Console.WriteLine(IsPirme);
+                Console.WriteLine($"{n}은 소수가 아닙니다.");
 
             }
 
