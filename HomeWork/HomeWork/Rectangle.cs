@@ -7,59 +7,98 @@ using System.Threading.Tasks;
 namespace HomeWork
 {
 
-    public class Rectangle
+    public class Rectangle 
     {
         Point LeftTop;
         Point RightBottom;
 
 
-
         public Rectangle(Point lefttop, Point rightbottom)
         {
-            if(lefttop.GetX() == rightbottom.GetX()&&lefttop.GetY()==rightbottom.GetY())
+
+            if (lefttop.GetX() >= rightbottom.GetX() || lefttop.GetY() <= rightbottom.GetY())
             {
-                Console.WriteLine("두 좌표의 값이 같습니다. 두 좌표를 (0,0) (0,0)으로 초기화 합니다.");
-                this.LeftTop.SetX(0);
-                this.LeftTop.SetY(0);
-                this.RightBottom.SetX(0);
-                this.RightBottom.SetY(0);
-                return;
+                if(lefttop.GetX() >= rightbottom.GetX())
+                {
+
+                    Console.WriteLine("lefttop의 x값이 rightbottm의 x값보다 작아야 합니다.");
+
+                }
+
+                if (lefttop.GetY() <= rightbottom.GetY())
+                {
+                    Console.WriteLine("lefttop의 y값이 rightbottm의 y값보다 작아야 합니다.");
+
+                }
+                this.LeftTop = new Point(0, 0);
+                this.RightBottom = new Point(0, 0);
+
+            }
+            else
+            {
+                this.LeftTop = lefttop;
+                this.RightBottom = rightbottom;
+
             }
 
-            this.LeftTop = lefttop;
-            this.RightBottom = rightbottom;
+
+
 
         }
 
         public void SetLTRB(Point lt, Point rb)
         {
-            this.LeftTop = lt;
-            this.RightBottom = rb;
+            if (lt.GetX() >= rb.GetX() || lt.GetY() <= rb.GetY())
+            {
+                if (lt.GetX() >= rb.GetX())
+                {
+
+                    Console.WriteLine("lefttop의 x값이 rightbottm의 x값보다 작아야 합니다.");
+
+                }
+
+                if (lt.GetY() <= rb.GetY())
+                {
+                    Console.WriteLine("lefttop의 y값이 rightbottm의 y값보다 작아야 합니다.");
+
+                }
+                this.LeftTop = new Point(0, 0);
+                this.RightBottom = new Point(0, 0);
+
+            }
+            else
+            {
+                this.LeftTop = lt;
+                this.RightBottom = rb;
+
+            }
+
+
         }
         public Point GetLT(){ return LeftTop; }
         public Point GetRB(){ return RightBottom; }
 
         public double Area()
         {
-            double lennth = (Math.Abs(RightBottom.GetX()) - Math.Abs(LeftTop.GetX()));
-            double breadth = (Math.Abs(LeftTop.GetY()) - Math.Abs(RightBottom.GetY()));
+            double length = RightBottom.GetX() - LeftTop.GetX();
+            double breadth =LeftTop.GetY() -RightBottom.GetY();
 
-            double res = lennth * breadth;
+            double res = length * breadth;
             return res;
         }
 
        
 
-        public double perimeter()
+        public double Perimeter()
         {
-            
-
-            double lennth = Math.Abs(RightBottom.GetX()) - Math.Abs(LeftTop.GetX());
-            double breadth = Math.Abs(LeftTop.GetY()) - Math.Abs(RightBottom.GetY());
-            
 
 
-            double res = (2 * lennth) + (2 * breadth);
+            double length = RightBottom.GetX() - LeftTop.GetX();
+            double breadth = LeftTop.GetY() - RightBottom.GetY();
+
+
+
+            double res = (2 * length) + (2 * breadth);
             return res;
 
         }
@@ -70,6 +109,9 @@ namespace HomeWork
         {
             return $"{LeftTop.ToString()} {RightBottom.ToString()}";
         }
+
+       
+
 
     }
 }

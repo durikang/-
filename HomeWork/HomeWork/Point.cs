@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork
 {
-    public class Point
+    public struct Point
     {
         double X;
         double Y;

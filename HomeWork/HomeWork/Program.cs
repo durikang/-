@@ -10,11 +10,25 @@ namespace HomeWork
     {
         static void Main(string[] args)
         {
-            Point lefttop = new Point(0,20);
-            Point rightbottom = new Point(-20,0);
-            Point Center = new Point(1, 1);
-            Point Radius = new Point(0, 0);
+            Point lefttop = new Point(-20, 20);
+            Point rightbottom = new Point(20, -20);
 
+            Rectangle rectangle = new Rectangle(lefttop, rightbottom);
+            Console.WriteLine(rectangle);
+
+            lefttop.SetX(-10);
+            Console.WriteLine(rectangle);
+
+
+
+            Circle circle = new Circle(lefttop, 1);
+            Console.WriteLine(circle);
+
+
+            /*
+            Point lefttop = new Point(-20,20);
+            Point rightbottom = new Point(20,-20);
+           
             Console.WriteLine($"LeftTop Value = X :{lefttop.GetX()} Y :{lefttop.GetY()}");
             Console.WriteLine($"LeftTop's Tostring value : {lefttop}");
             Console.WriteLine();
@@ -31,28 +45,27 @@ namespace HomeWork
             Console.WriteLine();
 
             Console.WriteLine($"사각형의 넓이 :{rectangle.Area()}");
-            Console.WriteLine($"사각형의 둘레 :{rectangle.perimeter()}");
+            Console.WriteLine($"사각형의 둘레 :{rectangle.Perimeter()}");
             Console.WriteLine();
-            
 
+
+            Point Center = new Point(1, 1);
+            double Radius = 1;
             Circle circle = new Circle(Center,Radius);
+
             Console.WriteLine($"Center Value = X : {Center.GetX()} Y : {Center.GetY()}");
             Console.WriteLine($"Center's Tostring value: {Center.ToString()}");
-            Console.WriteLine();
-
-            Console.WriteLine($"Radius Value = X : {Radius.GetX()} Y : {Radius.GetY()}");
-            Console.WriteLine($"Radius's Tostring value: {Radius.ToString()}");
             Console.WriteLine();
 
             Console.WriteLine($"Circle Center Value: {circle.GetCenter()}");
             Console.WriteLine($"Circle radius Value: {circle.GetRadius()}");
             Console.WriteLine();
 
-            Console.WriteLine($"원의 넓이 :{circle.Area()}");
+            Console.WriteLine($"원의 넓이 :{circle.Area(Radius)}");
             Console.WriteLine($"원의 둘레 :{circle.Circumference()}");
             Console.WriteLine();
 
-
+            */
 
 
 

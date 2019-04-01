@@ -5,3 +5,10 @@ C:\Users\kooda\source\repos\HomeWork\HomeWork\obj\Debug\HomeWork.csprojAssemblyR
 C:\Users\kooda\source\repos\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.CoreCompileInputs.cache
 C:\Users\kooda\source\repos\HomeWork\HomeWork\obj\Debug\HomeWork.exe
 C:\Users\kooda\source\repos\HomeWork\HomeWork\obj\Debug\HomeWork.pdb
+C:\Users\kooda\OneDrive\바탕 화면\HomeWork\HomeWork\HomeWork\bin\Debug\HomeWork.exe.config
+C:\Users\kooda\OneDrive\바탕 화면\HomeWork\HomeWork\HomeWork\bin\Debug\HomeWork.exe
+C:\Users\kooda\OneDrive\바탕 화면\HomeWork\HomeWork\HomeWork\bin\Debug\HomeWork.pdb
+C:\Users\kooda\OneDrive\바탕 화면\HomeWork\HomeWork\HomeWork\obj\Debug\HomeWork.csprojAssemblyReference.cache
+C:\Users\kooda\OneDrive\바탕 화면\HomeWork\HomeWork\HomeWork\obj\Debug\HomeWork.csproj.CoreCompileInputs.cache
+C:\Users\kooda\OneDrive\바탕 화면\HomeWork\HomeWork\HomeWork\obj\Debug\HomeWork.exe
+C:\Users\kooda\OneDrive\바탕 화면\HomeWork\HomeWork\HomeWork\obj\Debug\HomeWork.pdb
