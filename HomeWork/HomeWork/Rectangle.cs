@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,71 +9,19 @@ namespace HomeWork
 
     public class Rectangle 
     {
-        Point LeftTop;
-        Point RightBottom;
-
+        Point LeftTop=new Point(0,0);
+        Point RightBottom=new Point(0,0);
 
         public Rectangle(Point lefttop, Point rightbottom)
         {
-
-            if (lefttop.GetX >= rightbottom.GetX || lefttop.GetY <= rightbottom.GetY)
-            {
-                if(lefttop.GetX >= rightbottom.GetX)
-                {
-
-                    Console.WriteLine("lefttop의 x값이 rightbottm의 x값보다 작아야 합니다.");
-
-                }
-
-                if (lefttop.GetY <= rightbottom.GetY)
-                {
-                    Console.WriteLine("lefttop의 y값이 rightbottm의 y값보다 작아야 합니다.");
-
-                }
-                this.LeftTop = new Point(0, 0);
-                this.RightBottom = new Point(0, 0);
-
-            }
-            else
-            {
-                this.LeftTop = lefttop;
-                this.RightBottom = rightbottom;
-
-            }
-
-
-
-
+                LeftTop = new Point(lefttop.GetX, lefttop.GetY);
+                RightBottom = new Point(rightbottom.GetX, rightbottom.GetY);
         }
 
-        public void SetLTRB(Point lt, Point rb)
+        public void SetLTRB(Point lefttop, Point rightbottom)
         {
-            if (lt.GetX >= rb.GetX || lt.GetY <= rb.GetY)
-            {
-                if (lt.GetX >= rb.GetX)
-                {
-
-                    Console.WriteLine("lefttop의 x값이 rightbottm의 x값보다 작아야 합니다.");
-
-                }
-
-                if (lt.GetY <= rb.GetY)
-                {
-                    Console.WriteLine("lefttop의 y값이 rightbottm의 y값보다 작아야 합니다.");
-
-                }
-                this.LeftTop = new Point(0, 0);
-                this.RightBottom = new Point(0, 0);
-
-            }
-            else
-            {
-                this.LeftTop = lt;
-                this.RightBottom = rb;
-
-            }
-
-
+                LeftTop = new Point(lefttop.GetX, lefttop.GetY);
+                RightBottom = new Point(rightbottom.GetX, rightbottom.GetY);
         }
         public Point GetLT(){ return LeftTop; }
         public Point GetRB(){ return RightBottom; }
