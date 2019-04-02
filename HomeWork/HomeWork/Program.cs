@@ -8,19 +8,27 @@ namespace HomeWork
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
             Point lefttop = new Point(-20, 20);
             Point rightbottom = new Point(20, -20);
 
+            
+
+
             Rectangle rectangle = new Rectangle(lefttop, rightbottom);
             Console.WriteLine(rectangle);
 
-            lefttop.SetX(-10);
+
+            lefttop=lefttop.DeepCopy();
+            lefttop.SetX(10);
+
             Console.WriteLine(rectangle);
 
 
-
+            
             Circle circle = new Circle(lefttop, 1);
             Console.WriteLine(circle);
 

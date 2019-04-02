@@ -16,16 +16,16 @@ namespace HomeWork
         public Rectangle(Point lefttop, Point rightbottom)
         {
 
-            if (lefttop.GetX() >= rightbottom.GetX() || lefttop.GetY() <= rightbottom.GetY())
+            if (lefttop.GetX >= rightbottom.GetX || lefttop.GetY <= rightbottom.GetY)
             {
-                if(lefttop.GetX() >= rightbottom.GetX())
+                if(lefttop.GetX >= rightbottom.GetX)
                 {
 
                     Console.WriteLine("lefttop의 x값이 rightbottm의 x값보다 작아야 합니다.");
 
                 }
 
-                if (lefttop.GetY() <= rightbottom.GetY())
+                if (lefttop.GetY <= rightbottom.GetY)
                 {
                     Console.WriteLine("lefttop의 y값이 rightbottm의 y값보다 작아야 합니다.");
 
@@ -48,16 +48,16 @@ namespace HomeWork
 
         public void SetLTRB(Point lt, Point rb)
         {
-            if (lt.GetX() >= rb.GetX() || lt.GetY() <= rb.GetY())
+            if (lt.GetX >= rb.GetX || lt.GetY <= rb.GetY)
             {
-                if (lt.GetX() >= rb.GetX())
+                if (lt.GetX >= rb.GetX)
                 {
 
                     Console.WriteLine("lefttop의 x값이 rightbottm의 x값보다 작아야 합니다.");
 
                 }
 
-                if (lt.GetY() <= rb.GetY())
+                if (lt.GetY <= rb.GetY)
                 {
                     Console.WriteLine("lefttop의 y값이 rightbottm의 y값보다 작아야 합니다.");
 
@@ -80,8 +80,8 @@ namespace HomeWork
 
         public double Area()
         {
-            double length = RightBottom.GetX() - LeftTop.GetX();
-            double breadth =LeftTop.GetY() -RightBottom.GetY();
+            double length = RightBottom.GetX - LeftTop.GetX;
+            double breadth =LeftTop.GetY -RightBottom.GetY;
 
             double res = length * breadth;
             return res;
@@ -93,8 +93,8 @@ namespace HomeWork
         {
 
 
-            double length = RightBottom.GetX() - LeftTop.GetX();
-            double breadth = LeftTop.GetY() - RightBottom.GetY();
+            double length = RightBottom.GetX - LeftTop.GetX;
+            double breadth = LeftTop.GetY - RightBottom.GetY;
 
 
 
