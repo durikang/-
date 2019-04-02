@@ -33,17 +33,6 @@ namespace HomeWork
 
 
 
-        public Point DeepCopy()
-        {
-            Point deepCopyClass = new Point();
-
-
-            deepCopyClass.SetX(this.X);
-            deepCopyClass.SetY(this.Y);
-
-
-            return deepCopyClass;
-        }
 
 
 
