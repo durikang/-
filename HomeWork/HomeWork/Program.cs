@@ -17,11 +17,17 @@ namespace HomeWork
 
 
 
-            Shape[] shape = new Shape[] { new Rectangle(LeftTop, RightBottom), new Circle(LeftTop, 20),new Rectangle(new Point(1,2), new Point(2, 1)),new Circle(new Point(1,2),5) };
+            Shape[] shape = new Shape[]
+            { new Rectangle(LeftTop, RightBottom),
+              new Circle(LeftTop, 20),
+              new Rectangle(new Point(1,2), new Point(2, 1)),
+              new Circle(new Point(1,2),5)
+            };
 
-            for (int i = 0; i < shape.Length; i++)
+
+            foreach (Shape i in shape)
             {
-                Console.WriteLine($"{shape[i].Area()} {shape[i].Circumference()}");
+                Console.WriteLine($"{i.Area()} {i.Circumference()}");
             }
 
 
